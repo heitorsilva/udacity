@@ -16,3 +16,18 @@ docker run -it --rm -v "$(pwd)":/udacity:delegated -w /udacity --name Udacity-CP
 docker exec -it Udacity-CPP ash # go inside a running container
 docker kill Udacity-CPP # kills the container
 ```
+
+## Compiling
+
+To compile files, use the command bellow:
+
+```bash
+clang++ -Wall -std=c++17 <input_file>.cpp -o <output_file>.out
+```
+
+> The .out exntesion is not mandatory for the output,  
+but it's there because it's ignored on this repo
+
+## Styleguide
+
+I will follow the [Google C++ styleguide](https://google.github.io/styleguide/cppguide.html) for this repository.
